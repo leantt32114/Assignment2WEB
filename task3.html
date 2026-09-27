@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3 — Three layouts, one markup</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="task1.html">GPU Price Guide</a>
+      <nav class="site-nav">
+        <a href="task1.html">Task 1 · Grid</a>
+        <a href="task2.html">Task 2 · Flexbox</a>
+        <a href="task3.html" aria-current="page">Task 3 · Grid + Flexbox</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Task 3. Three layouts, one markup</h1>
+    <p class="lead">Twelve Radeon RX 9000 and GeForce RTX 50 graphics cards with their launch prices in US dollars. Change the class <code>grid</code> on the catalog to <code>list</code> or <code>magazine</code>, the rest of the HTML stays the same.</p>
+
+    <section class="catalog grid">
+
+      <article class="item">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">AMD Radeon RX 9070 XT — the best price for 1440p gaming</h3>
+          <p class="item__text">The top card of the RDNA 4 generation. It has 16 GB of GDDR6 memory, much better ray tracing than the previous Radeon cards and FSR 4 upscaling. In most games it is close to the GeForce RTX 5070 Ti but costs noticeably less, which makes it one of the most popular cards of the year.</p>
+          <p class="item__price">$599 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-03">Mar 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5090</h3>
+          <p class="item__text">The fastest gaming card, 32 GB of GDDR7.</p>
+          <p class="item__price">$1,999 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-01">Jan 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5080</h3>
+          <p class="item__text">16 GB of GDDR7 and DLSS 4 with Multi Frame Generation for high frame rates in 4K.</p>
+          <p class="item__price">$999 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-01">Jan 2025</time>
+      </article>
+
+      <article class="item">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">AMD Radeon RX 9070</h3>
+          <p class="item__text">A slightly slower and more power-efficient version of the RX 9070 XT with the same 16 GB of memory. It is a strong rival for the GeForce RTX 5070.</p>
+          <p class="item__price">$549 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-03">Mar 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5070 Ti</h3>
+          <p class="item__text">16 GB of memory and performance close to the RTX 5080 for 1440p and 4K.</p>
+          <p class="item__price">$749 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-02">Feb 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5070</h3>
+          <p class="item__text">12 GB of GDDR7 for 1440p gaming.</p>
+          <p class="item__price">$549 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-03">Mar 2025</time>
+      </article>
+
+      <article class="item">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">AMD Radeon RX 9060 XT 16 GB</h3>
+          <p class="item__text">A mid-range card for 1080p and light 1440p gaming. The 16 GB version is the safer choice for new games, because many of them already use more than 8 GB of video memory at high settings.</p>
+          <p class="item__price">$349 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-06">Jun 2025</time>
+      </article>
+
+      <article class="item">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">AMD Radeon RX 9060 XT 8 GB</h3>
+          <p class="item__text">The cheaper version for 1080p.</p>
+          <p class="item__price">$299 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-06">Jun 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5060 Ti 16 GB — the most balanced card in the RTX 5060 family</h3>
+          <p class="item__text">Enough memory for modern games at 1080p and 1440p.</p>
+          <p class="item__price">$429 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-04">Apr 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5060 Ti 8 GB</h3>
+          <p class="item__text">The same chip as the 16 GB model with half of the memory, so it can run out of memory in new games at high settings.</p>
+          <p class="item__price">$379 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-04">Apr 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5060</h3>
+          <p class="item__text">A popular budget card for 1080p with DLSS 4.</p>
+          <p class="item__price">$299 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-05">May 2025</time>
+      </article>
+
+      <article class="item item--nvidia">
+        <div class="item__img" aria-hidden="true"></div>
+        <div class="item__body">
+          <h3 class="item__title">GeForce RTX 5050</h3>
+          <p class="item__text">The cheapest card of the RTX 50 series. It has 8 GB of GDDR6 memory and is made for esports games and simple 1080p gaming on a small budget.</p>
+          <p class="item__price">$249 <span>MSRP</span></p>
+        </div>
+        <time class="item__date" datetime="2025-07">Jul 2025</time>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Your Name · Group XX-0000 · Assignment #2</div>
+  </footer>
+
+</body>
+</html>

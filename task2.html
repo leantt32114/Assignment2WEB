@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 — Component library</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="task1.html">GPU Price Guide</a>
+      <nav class="site-nav">
+        <a href="task1.html">Task 1 · Grid</a>
+        <a href="task2.html" aria-current="page">Task 2 · Flexbox</a>
+        <a href="task3.html">Task 3 · Grid + Flexbox</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Task 2. Component library</h1>
+    <p class="lead">Five Flexbox components for a small graphics card store: Radeon RX 9000 and GeForce RTX 50. Prices are official launch prices (MSRP) in US dollars.</p>
+
+    <div class="library">
+
+      <section class="demo">
+        <h2>1. Navigation bar</h2>
+        <p class="demo__note">Short links</p>
+        <nav class="navbar" aria-label="Main">
+          <a class="navbar__logo" href="#">GPU Market</a>
+          <ul class="navbar__links">
+            <li><a href="#">Radeon</a></li>
+            <li><a href="#">GeForce</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+          <div class="navbar__actions">
+            <a class="btn btn--outline" href="#">Log in</a>
+            <a class="btn" href="#">Cart</a>
+          </div>
+        </nav>
+        <p class="demo__note">Long links</p>
+        <nav class="navbar" aria-label="Main with long links">
+          <a class="navbar__logo" href="#">GPU Market</a>
+          <ul class="navbar__links">
+            <li><a href="#">AMD Radeon RX 9000 series graphics cards</a></li>
+            <li><a href="#">NVIDIA GeForce RTX 50 series graphics cards</a></li>
+            <li><a href="#">Price history and best deals of the week</a></li>
+            <li><a href="#">Reviews and gaming benchmarks</a></li>
+            <li><a href="#">Where to buy in Kazakhstan</a></li>
+            <li><a href="#">Delivery and warranty</a></li>
+          </ul>
+          <div class="navbar__actions">
+            <a class="btn btn--outline" href="#">Log in</a>
+            <a class="btn" href="#">Cart</a>
+          </div>
+        </nav>
+      </section>
+
+      <section class="demo">
+        <h2>2. Cards</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card__tag card__tag--amd">AMD</span>
+            <h3 class="card__title">Radeon RX 9060 XT 16 GB</h3>
+            <p class="card__text">A budget card for 1080p.</p>
+            <p class="card__price">$349 <span>MSRP</span></p>
+            <a class="btn" href="#">Compare prices</a>
+          </article>
+          <article class="card">
+            <span class="card__tag card__tag--nvidia">NVIDIA</span>
+            <h3 class="card__title">GeForce RTX 5070</h3>
+            <p class="card__text">12 GB of GDDR7 memory and DLSS 4 with Multi Frame Generation. A good choice for gaming at 1440p.</p>
+            <p class="card__price">$549 <span>MSRP</span></p>
+            <a class="btn" href="#">Compare prices</a>
+          </article>
+          <article class="card">
+            <span class="card__tag card__tag--nvidia">NVIDIA</span>
+            <h3 class="card__title">GeForce RTX 5090</h3>
+            <p class="card__text">The fastest gaming graphics card of this generation. It has 32 GB of GDDR7 memory, handles any game in 4K with ray tracing and is also popular for work with 3D graphics, video and neural networks. It needs a strong power supply and a big case, and in 2026 store prices are often much higher than the launch price.</p>
+            <p class="card__price">$1,999 <span>MSRP</span></p>
+            <a class="btn" href="#">Compare prices</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>3. Pagination</h2>
+        <nav class="pagination" aria-label="Pagination">
+          <span class="pagination__side"></span>
+          <div class="pagination__pages">
+            <a class="page-link" href="#" aria-label="Previous page">&larr;</a>
+            <a class="page-link" href="#">1</a>
+            <a class="page-link" href="#" aria-current="page">2</a>
+            <a class="page-link" href="#">3</a>
+            <a class="page-link" href="#">4</a>
+            <span class="page-gap">…</span>
+            <a class="page-link" href="#">12</a>
+            <a class="page-link" href="#" aria-label="Next page">&rarr;</a>
+          </div>
+          <p class="pagination__side pagination__count">Showing 13–24 of 138 graphics cards</p>
+        </nav>
+      </section>
+
+      <section class="demo">
+        <h2>4. Comment</h2>
+        <div class="comments">
+          <article class="comment">
+            <div class="comment__avatar" aria-hidden="true">AK</div>
+            <div class="comment__body">
+              <div class="comment__meta">
+                <span class="comment__author">Dinmukhamed K.</span>
+                <time class="comment__time" datetime="2026-09-27T18:00">2 hours ago</time>
+              </div>
+              <p class="comment__text">Bought the RX 9070, very happy with it!</p>
+            </div>
+          </article>
+          <article class="comment">
+            <div class="comment__avatar" aria-hidden="true">DS</div>
+            <div class="comment__body">
+              <div class="comment__meta">
+                <span class="comment__author">Kuanish E.</span>
+                <time class="comment__time" datetime="2026-09-26T09:30">yesterday</time>
+              </div>
+              <p class="comment__text">I was choosing between the RTX 5070 and the RX 9070 for a long time. In the end I took the RX 9070 because it has 16 GB of memory, and in the games I play at 1440p it is as fast as the RTX 5070. The only minus is that prices in our stores are much higher than the official ones, so compare several shops before you buy. Here is the benchmark table I used: https://nanoreview.net/en/gpu-compare/radeon-rx-9070-vs-geforce-rtx-5070</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo">
+        <h2>5. Pricing table</h2>
+        <div class="pricing">
+          <article class="plan">
+            <h3 class="plan__name">Budget</h3>
+            <p class="plan__gpu">GeForce RTX 5060</p>
+            <p class="plan__price">$299 <span>MSRP</span></p>
+            <ul class="plan__features">
+              <li>1080p gaming</li>
+              <li>8 GB GDDR7</li>
+              <li>DLSS 4</li>
+            </ul>
+            <a class="btn btn--outline" href="#">Choose Budget</a>
+          </article>
+          <article class="plan plan--featured">
+            <span class="plan__badge">Best value</span>
+            <h3 class="plan__name">Recommended</h3>
+            <p class="plan__gpu">Radeon RX 9070 XT</p>
+            <p class="plan__price">$599 <span>MSRP</span></p>
+            <ul class="plan__features">
+              <li>1440p gaming</li>
+              <li>16 GB GDDR6</li>
+              <li>FSR 4</li>
+              <li>Good ray tracing</li>
+            </ul>
+            <a class="btn" href="#">Choose Recommended</a>
+          </article>
+          <article class="plan">
+            <h3 class="plan__name">Enthusiast</h3>
+            <p class="plan__gpu">GeForce RTX 5080</p>
+            <p class="plan__price">$999 <span>MSRP</span></p>
+            <ul class="plan__features">
+              <li>4K gaming</li>
+              <li>16 GB GDDR7</li>
+              <li>DLSS 4 with Multi Frame Generation</li>
+              <li>Strong ray tracing</li>
+              <li>Needs an 850 W power supply</li>
+              <li>Good for streaming and video editing</li>
+            </ul>
+            <a class="btn btn--outline" href="#">Choose Enthusiast</a>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Your Name · Group XX-0000 · Assignment #2</div>
+  </footer>
+
+</body>
+</html>
