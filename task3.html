@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task 3 — Three layouts, one markup</title>
- <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,7 +21,17 @@
 
   <main class="container page">
     <h1>Task 3. Three layouts, one markup</h1>
-    <p class="lead">Twelve Radeon RX 9000 and GeForce RTX 50 graphics cards with their launch prices in US dollars. Change the class <code>grid</code> on the catalog to <code>list</code> or <code>magazine</code>, the rest of the HTML stays the same.</p>
+    <p class="lead">Twelve Radeon RX 9000 and GeForce RTX 50 graphics cards with their launch prices in US dollars. Switch the layout with the buttons or change the class <code>grid</code> on the catalog to <code>list</code> or <code>magazine</code>, the rest of the HTML stays the same.</p>
+
+    <input class="view-radio view-radio--grid" type="radio" name="view" id="view-grid" checked>
+    <input class="view-radio view-radio--list" type="radio" name="view" id="view-list">
+    <input class="view-radio view-radio--magazine" type="radio" name="view" id="view-magazine">
+
+    <div class="view-switch" aria-label="Layout">
+      <label class="view-switch__btn" for="view-grid">Grid</label>
+      <label class="view-switch__btn" for="view-list">List</label>
+      <label class="view-switch__btn" for="view-magazine">Magazine</label>
+    </div>
 
     <section class="catalog grid">
 
